@@ -13,7 +13,7 @@ spec:
   controllerName: vmoperator.vmware.com/keswickworker
   hardware:
     cpus: 4
-    memory: 8Gi
+    memory: 12Gi
     devices:
       dynamicDirectPathIODevices:
       - vendorID: 0x8086
