@@ -19,7 +19,7 @@ spec:
         - name: VIDEO_INPUT
           value: "0"
         - name: ACCELERATION_DEVICE
-          value: CPU
+          value: GPU
         - name: AMQP_HOSTNAME
           valueFrom:
             secretKeyRef:
@@ -44,7 +44,7 @@ spec:
               name: edge-inferencing-events-default-user
               key: password
               optional: true
-        image: mwrightpivotal/openvino_notebooks:ovrun
+        image: masanara/ov:1.2
         name: workload
         securityContext:
           runAsUser: 0
