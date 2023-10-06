@@ -12,12 +12,12 @@ spec:
   # needed capabilities to deploy keswick worker vm.
   controllerName: vmoperator.vmware.com/keswickworker
   hardware:
-    cpus: 4
-    memory: 12Gi
+    cpus: 1
+    memory: 2Gi
     devices:
-      dynamicDirectPathIODevices:
-      - vendorID: 0x8086
-        deviceID: 0xa707
+      #dynamicDirectPathIODevices:
+      #- vendorID: 0x8086
+      #  deviceID: 0xa707
 ---
 apiVersion: v1
 kind: Namespace
