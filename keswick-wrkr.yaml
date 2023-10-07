@@ -14,7 +14,6 @@ spec:
   hardware:
     cpus: 4
     memory: 12Gi
-    storage: 50Gi
 ---
 apiVersion: v1
 kind: Namespace
