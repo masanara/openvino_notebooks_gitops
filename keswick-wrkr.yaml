@@ -17,7 +17,7 @@ spec:
     devices:
       dynamicDirectPathIODevices:
       - vendorID: 0x8086
-        deviceID: 0xa707
+        deviceID: 0xa70a
 ---
 apiVersion: v1
 kind: Namespace
