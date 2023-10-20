@@ -6,7 +6,7 @@ metadata:
   annotations:
     vmoperator.vmware.com/image-supported-check: disable
 spec:
-  className: best-effort-small
+  className: best-effort-xsmall
   imageName: packages.vmware.com/photon/4.0/GA/ova/photon-hw11-4.0-1526e30ba0.ova
   powerState: poweredOn
   networkInterfaces:
@@ -29,7 +29,7 @@ data:
       - name: root
         sudo: ALL=(ALL) NOPASSWD:ALL
         lock_passwd: false
-        passwd: '$1$SaltSalt$4/Wvh/trP4KiKiWwIJCxG1'
+        passwd: '$6$rounds=4096$1G8o7yMmuIExwmJL$Z2U9EexAf8FG/7UHeut1NwvQyeBxSjqqgEgxuNOKQmKjBVMZWUhfvjh/BkQAFARD5zDo1puWSySlXp/IhijxL/'
         shell: /bin/bash
     write_files:
       - content: |
