@@ -13,11 +13,13 @@ spec:
   controllerName: vmoperator.vmware.com/keswickworker
   hardware:
     cpus: 4
-    memory: 12Gi
+    memory: 16Gi
     devices:
       dynamicDirectPathIODevices:
-      - vendorID: 0x8086
-        deviceID: 0xa7a0
+      - vendorID: 32902
+        deviceID: 42912
+      #- vendorID: 0x8086
+      #  deviceID: 0xa7a0
   policies:
     resources:
       limits:
@@ -25,7 +27,7 @@ spec:
         memory: "0"
       requests:
         cpu: "0"
-        memory: 12Gi
+        memory: 16Gi
 ---
 apiVersion: v1
 kind: Namespace
