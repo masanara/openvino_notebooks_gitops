@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blackjack-frontend
+  name: peoplecount-frontend
   namespace: default
   labels:
-    app.kubernetes.io/part-of: blackjack
+    app.kubernetes.io/part-of: peoplecount
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/part-of: blackjack
+      app.kubernetes.io/part-of: peoplecount
   template:
     metadata:
       labels:
-        app.kubernetes.io/part-of: blackjack
+        app.kubernetes.io/part-of: peoplecount
     spec:
       containers:
       - env:
@@ -56,13 +56,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: blackjack
+  name: peoplecount
   namespace: default
   labels:
-    app.kubernetes.io/part-of: blackjack
+    app.kubernetes.io/part-of: peoplecount
 spec:
   selector:
-    app.kubernetes.io/part-of: blackjack
+    app.kubernetes.io/part-of: peoplecount
   type: NodePort
   ports:
   - targetPort: 8888
